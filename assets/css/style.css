@@ -3,3 +3,28 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    background-color: #278933;
+    color: #174f79;
+    padding: 25px;
+}
+
+.date-info{
+    color: #fff;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+}
+
+.box-pass{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    height: calc(100vh - 75px);
+}
