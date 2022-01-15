@@ -31,3 +31,11 @@ body{
     padding: 30px;
     height: calc(100vh - 75px);
 }
+
+/* Avoid Chrome to see Safari hack */
+@supports (-webkit-touch-callout: none) {
+    body {
+      /* The hack for Safari */
+      height: -webkit-fill-available;
+    }
+  }
