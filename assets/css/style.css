@@ -13,7 +13,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #278933;
     color: #174f79;
-    padding: 15px;
+    padding: 15px 15px 10px 15px
 }
 
 .date-info{
@@ -29,7 +29,20 @@ body{
     background-color: #fff;
     border-radius: 5px;
     padding: 30px;
-    height: calc(100vh - 75px);
+    height: calc(100vh - 65px);
+}
+
+.box-pass__title{
+    font-size: 1.8rem;
+}
+
+.box-pass__image{
+    padding-top: 25px;
+    text-align: center;
+}
+
+.box-pass__par{
+    margin-top: 80px;
 }
 
 /* Avoid Chrome to see Safari hack */
