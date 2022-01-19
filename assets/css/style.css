@@ -33,7 +33,7 @@ body{
 }
 
 .box-pass__title{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .box-pass__image{
@@ -44,6 +44,10 @@ body{
 .box-pass__par{
     margin-top: 60px;
     font-size: 0.9rem;
+}
+
+.fa-check{
+    color: #278933;
 }
 
 /* Avoid Chrome to see Safari hack */
