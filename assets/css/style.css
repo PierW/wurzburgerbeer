@@ -34,8 +34,8 @@ body{
 
 /* Avoid Chrome to see Safari hack */
 @supports (-webkit-touch-callout: none) {
-    body {
+    .box-pass {
       /* The hack for Safari */
-      min-height: -webkit-fill-available;
+      height: -webkit-fill-available;
     }
   }
