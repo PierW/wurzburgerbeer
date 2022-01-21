@@ -11,31 +11,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Include Handlebars from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="./assets/javascript/main.js"></script>
 </head>
-<body>
 
-    <div class="date-info">
-        <small>
-            Data e ora di validazione: 
-            <span class="today-date"></span>
-            <span class="today-hour"></span> 
-        </small>
-    </div>
-    <div class="box-pass">
-
-        <h2 class="box-pass__title">Sei moderatamente alcolizzato.</h2>
-        <div class="box-pass__image">
-            <i class="fas fa-check fa-5x"></i>
+    <script id="wurz-template" type="text/x-handlebars-template">
+        <div class="date-info">
+            <small>
+                {{timeLabel}}
+                <span class="today-date">{{timeDate}}</span>
+                <span class="today-hour">{{timeHour}}</span> 
+            </small>
         </div>
+        <div class="box-pass">
 
-        <div class="box-pass__par">
-            <p>
-                <strong>alcolizzato</strong> <i>s. m. e f.</i>  – Persona dedita all’uso smodato di bevande alcoliche, e che pertanto presenta i segni clinici di compromissione fisica e psichica provocati dall’alcolismo cronico.
-            </p>
+            <h2 class="box-pass__title">{{title}}</h2>
+            <div class="box-pass__image">
+                {{{icon}}}
+            </div>
+
+            <div class="box-pass__par">
+                <p>
+                    {{{text}}}
+                </p>
+            </div> 
         </div>
+    </script>
 
-    </div>
-    
-</body>
+    <body id="template"></body>
+
 </html>

@@ -1,3 +1,8 @@
+:root {
+    --green: #278933;
+    --red: #e5243d;
+  }
+
 *{
     padding: 0;
     margin: 0;
@@ -11,9 +16,16 @@ html{
 body{
     min-height: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color: #278933;
     color: #174f79;
     padding: 15px 15px 5px 15px
+}
+
+body.green-pass{
+    background-color: var(--green);
+}
+
+body.red-pass{
+    background-color: var(--red);
 }
 
 .date-info{
@@ -47,7 +59,11 @@ body{
 }
 
 .fa-check{
-    color: #278933;
+    color: var(--green);
+}
+
+.fa-times{
+    color: var(--red);
 }
 
 /* Avoid Chrome to see Safari hack */
